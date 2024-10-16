@@ -1,6 +1,7 @@
 terraform {
   backend "gcs" {
     bucket = "19bbc9f3142b563f-terraform-remote-backend"
+    credentials = "${var.credentials}"
   }
 }
 
