@@ -20,15 +20,6 @@ resource "google_compute_subnetwork" "k8s_subnet" {
   network       = google_compute_network.vpc_network.id
 }
 
-resource "google_compute_subnetwork" "data_subnet" {
-  project       = var.project_id
-  name          = "data-subnet"
-  ip_cidr_range = "10.10.60.0/24"
-  region        = "us-central1"
-  network       = google_compute_network.vpc_network.id
-}
-
-
 
 resource "google_compute_router_nat" "nat" {
   project                            = var.project_id
