@@ -3,5 +3,3 @@ variable "project_id" {
   type        = string
   default     = "hale-post-438616-r3"
 }
-
-variable "gcp_sa_key" {} 
