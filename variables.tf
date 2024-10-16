@@ -4,4 +4,4 @@ variable "project_id" {
   default     = "hale-post-438616-r3"
 } 
 
-variable "credentials" {} 
+variable "gcp_sa_key" {} 
